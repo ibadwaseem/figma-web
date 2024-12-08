@@ -11,12 +11,12 @@ const Footer = () => {
           <div className='text-gray-500'>
             <br/>
             <br/>
-            <p>400 University Drive Suite 200 Corol Gables, 33134 USA</p>
+            <p>Iqra University, 33134 USA</p>
             <br/>
             <br/><br/><br/><br/>
 
             <br/>
-            <p className='text-black'>2022 Meubel House. All rights reserved</p>
+            <p className='text-black'>2022 Syed Muhamaad Ibad. All rights reserved</p>
           </div>
 
           {/* Second Column: Home, Shop, About, Contact */}
