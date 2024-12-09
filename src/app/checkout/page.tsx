@@ -5,36 +5,46 @@ import Link from 'next/link'
 const Checkout = () => {
   return (
     <div>
-      {/* First Section with Tailwind Background */}
-      <section className="relative h-[60vh] bg-cover bg-center bg-shop-bg">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-          {/* Small Image in Center */}
-          <div className="mb-4">
-            <Image
-              src="/image/shop.png" 
-              alt="Shop Icon"
-              width={100}   
-              height={100}  
-              className="object-cover rounded-full"
-            />
-          </div>
-          <h1 className="text-5xl font-bold">Check Out</h1>
-          <p className="text-xl mt-4">
-            <Link href="/">Home</Link> &gt; Check Out
-          </p>
-        </div>
-      </section>
 
-      {/* 2nd Section: Billing Details and Product Information */}
+    
+<section
+  className="relative h-[60vh] bg-cover bg-center"
+  style={{ backgroundImage: "url('/image/bgibad1.jpg')" }}
+>
+  <div className="absolute inset-0 bg-black opacity-50"></div>
+
+  <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+ 
+    <div className="mb-4">
+      <Image
+        src="/image/ibad3.png"
+        alt="Shop Icon"
+        width={100}
+        height={100}
+        className="object-cover rounded-full"
+      />
+    </div>
+
+  
+    <h1 className="text-5xl font-bold">Check out</h1>
+
+ 
+    <p className="text-xl mt-4">
+      <Link href="/">Home</Link> &gt; Checkout
+    </p>
+  </div>
+</section>
+
+
+     
       <section className="bg-white py-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* First Column: Billing Details */}
+           
             <div className="space-y-6">
               <h1 className="text-3xl font-bold ">Billing Details</h1>
               <form className="space-y-4">
-                {/* First Name */}
+              
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="firstName">First Name</label>
                   <input
@@ -44,7 +54,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* Last Name */}
+             
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="lastName">Last Name</label>
                   <input
@@ -54,7 +64,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* Company Name */}
+               
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="companyName">Company Name (optional)</label>
                   <input
@@ -64,7 +74,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* Country/Region */}
+               
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="country">Country/Region</label>
                   <input
@@ -74,7 +84,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* Street Address */}
+               
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="streetAddress">Street Address</label>
                   <input
@@ -84,7 +94,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* Town/City */}
+               
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="townCity">Town/City</label>
                   <input
@@ -94,7 +104,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* Province */}
+               
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="province">Province</label>
                   <input
@@ -104,7 +114,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* ZIP Code */}
+               
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="zipCode">ZIP Code</label>
                   <input
@@ -114,7 +124,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* Phone */}
+               
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="phone">Phone</label>
                   <input
@@ -124,7 +134,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* Email */}
+               
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="email">Email</label>
                   <input
@@ -134,7 +144,7 @@ const Checkout = () => {
                     className="w-full p-3 border border-gray-300 rounded-md"
                   />
                 </div>
-                {/* Additional Information */}
+                
                 <div>
                   <label className="block text-lg font-semibold" htmlFor="additionalInfo">Additional Information</label>
                   <textarea
@@ -146,21 +156,21 @@ const Checkout = () => {
               </form>
             </div>
 
-            {/* Second Column: Product Information */}
+           
             <div className="space-y-6">
               <h1 className="text-3xl font-bold">Product <span className='text-end'>Sub Total</span> </h1>
               <div className="space-y-4">
-                {/* Row 1: Product */}
+              
                 <div className="flex justify-between">
                   <span>Asgaard Sofa *1</span>
                   <span>Rs 250,000.00</span>
                 </div>
-                {/* Row 2: Subtotal */}
+              
                 <div className="flex justify-between font-semibold">
                   <span>Subtotal</span>
                   <span>Rs 250,000.00</span>
                 </div>
-                {/* Row 3: Total */}
+               
                 <div className="flex justify-between font-semibold">
                   <span>Total</span>
                   <span>Rs 250,000.00</span>
@@ -187,7 +197,7 @@ const Checkout = () => {
               <p className="text-sm mt-2">
                 Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.
               </p>
-              {/* Place Order Button */}
+             
               <button className="w-full py-2 bg-transparent border border-black rounded-md text-black text-lg hover:bg-black hover:text-white transition">
                 Place Order
               </button>
@@ -196,26 +206,35 @@ const Checkout = () => {
         </div>
       </section>
 
-      {/* 3rd Section: CONCEPT Posts */}
-      <section className="bg-gray-100 text-black py-10">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* First Column */}
-            <div className="text-center">
-              <h2 className="text-black font-bold text-3xl">Free Delivery</h2>
-              <p className="text-lg text-gray-700">For all orders over $50, consectetur adipim scing elit.</p>
+      <section className="bg-amber-100 py-12">
+        <div className="container mx-auto px-6 lg:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+           
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-black font-bold text-3xl mb-4">
+                Free Delivery
+              </h2>
+              <p className="text-lg text-gray-700">
+                For all orders over $50, consectetur adipiscing elit.
+              </p>
             </div>
-
-            {/* Second Column */}
-            <div className="text-center">
-              <h2 className="text-black font-bold text-3xl">90 Days Return</h2>
-              <p className="text-lg text-gray-700">If the product has an issue, consectetur adipim scing elit.</p>
+           
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-black font-bold text-3xl mb-4">
+                90 Days Return
+              </h2>
+              <p className="text-lg text-gray-700">
+                If the product has an issue, consectetur adipiscing elit.
+              </p>
             </div>
-
-            {/* Third Column */}
-            <div className="text-center">
-              <h2 className="text-black font-bold text-3xl">Secure Payments</h2>
-              <p className="text-lg text-gray-700">100% secure payments, consectetur adipim scing elit.</p>
+          
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-black font-bold text-3xl mb-4">
+                Secure Payments
+              </h2>
+              <p className="text-lg text-gray-700">
+                100% secure payments, consectetur adipiscing elit.
+              </p>
             </div>
           </div>
         </div>

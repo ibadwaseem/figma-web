@@ -1,41 +1,9 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import React from 'react'
 
-const About = () => {
+export const info= () => {
   return (
-    <div className='about'>
-
-      
-
-<section
-  className="relative h-[60vh] bg-cover bg-center"
-  style={{ backgroundImage: "url('/image/bgibad1.jpg')" }}
->
-  <div className="absolute inset-0 bg-black opacity-50"></div>
-
-  <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
- 
-    <div className="mb-4">
-      <Image
-        src="/image/ibad3.png"
-        alt="Shop Icon"
-        width={100}
-        height={100}
-        className="object-cover rounded-full"
-      />
-    </div>
-
-  
-    <h1 className="text-5xl font-bold">About Us</h1>
-
- 
-    <p className="text-xl mt-4">
-      <Link href="/">Home</Link> &gt; About us
-    </p>
-  </div>
-</section>
-
-<section className="bg-amber-100 py-12">
+    <div>
+  <section className="bg-amber-100 py-12">
         <div className="container mx-auto px-6 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
            
@@ -68,8 +36,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
     </div>
   )
 }
-
-export default About
+export default  info
