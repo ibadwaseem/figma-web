@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Link from 'next/link';
+
 import { CiClock2 } from 'react-icons/ci';
 import { SlCalender } from 'react-icons/sl';
 
